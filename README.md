@@ -9,4 +9,5 @@
 ## How to run?
 
 > help : `python xml_parsing.py -h`
-> Example : `python xml_parsing.py twb_samples output_files`
+
+> Example : `$python xml_parsing.py twb_samples output_files`
