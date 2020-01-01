@@ -1,0 +1,24 @@
+#python version to be used: 3.6+
+#suggested libraries: xml, beautifulsoup4, csv, etc.
+
+#input1:     the script expects a path to the folder with twb files
+#input2:     the script expects a path to keep the output
+#output:     the script produces two text files in the output folder
+
+#outfile1 schema:
+# folder_path #input1 path
+# wb_name     #twb file name
+# ws_name     #worksheets.worksheet.name
+# ds_id       #worksheets.worksheet.table.view.datasource-dependencies.datasource
+# col_caption #worksheets.worksheet.table.view.datasource-dependencies.column.caption
+# col_name    #worksheets.worksheet.table.view.datasource-dependencies.column.name
+
+#outfile2 schema:
+# folder_path #input1 path
+# wb_name     #twb file name
+# dash_name   #(window class='dashboard').name
+# ws_name     #(window class='dashboard').viewpoints.viewpoint.name
+
+#outfile1 name: datasource_dependencies_%Y%m%d_%H%M%S.csv
+#outfile2 name: dashboards_%Y%m%d_%H%M%S.csv
+#outfiles' format: csv (comma-separated, values enclosed in double quotes)
