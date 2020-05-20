@@ -1,12 +1,6 @@
 # xml_parsing_script
 this python script was created to automate the documentation process of Tableau dashboards and workbooks calculations by parsing their xml files.
 
-**Libraries needed:**
-
-- pandas
-- beautifulsoup4
-- argparse
-
 ## How to run?
 
 > help : `python xml_parsing.py -h`
