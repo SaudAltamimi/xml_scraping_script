@@ -1,4 +1,4 @@
-# xml_parsing_script
+# tableau_xml_parsing_script
 this python script was created to automate the documentation process of Tableau dashboards and workbooks calculations by parsing their xml files.
 
 ## How to run?
