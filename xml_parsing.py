@@ -91,8 +91,8 @@ def parse_required_metadata(xml_doc,file_name):
 
     return df_schema1,df_schema2
 
-if __name__=='__main__':
-
+def main():
+    
     parser = argparse.ArgumentParser(description='Parsing an xml file to get some valuable metadata, Example of how to run ($python xml_parsing.py twb_samples output_files)')
 
     parser.add_argument("input_path",
@@ -158,5 +158,10 @@ if __name__=='__main__':
     # saving the results
     df_all_schema1.to_csv(args.output_path+os.sep+f'datasource_dependencies_{dt_str}.csv',index=False)
     df_all_schema2.to_csv(args.output_path+os.sep+f'dashboards_{dt_str}.csv',index=False)
+    
+
+if __name__=='__main__':
+    main()
+
 
     
